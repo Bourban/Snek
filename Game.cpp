@@ -22,7 +22,6 @@ void Game::run()
 		update();
 
 	}
-
 }
 
 void Game::getInput()
@@ -47,11 +46,8 @@ void Game::draw()
 			//Need to draw this as[j][i] or the coordinate system will be skewed 90 degrees
 			std::cout << map[j][i] << ' ';
 		}
-
 		std::cout << "\n";
 	}
-
-
 }
 
 void Game::initialise()
@@ -123,6 +119,6 @@ void Game::updateMap()
 	{
 		map[p.x][p.y] = 'o';
 	}
-
+	//Making sure the first element is always a capital O to denote the head
 	map[player[0].x][player[0].y] = 'O';
 }
