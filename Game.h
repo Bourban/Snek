@@ -37,7 +37,8 @@ private:
 
 	char map[MAP_WIDTH][MAP_HEIGHT];
 
-	char input;
+	std::string input;
+	char inputChar;
 
 	int iPlayerHeadIndex;
 
